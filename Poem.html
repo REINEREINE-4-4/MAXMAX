@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+    <body class="Poem">
+
+        <div class="hearts">
+  <span style="left:5%; animation-duration:8s; animation-delay:0s;">💗</span>
+  <span style="left:20%; animation-duration:10s; animation-delay:2s;">💕</span>
+  <span style="left:35%; animation-duration:7s; animation-delay:4s;">❤️</span>
+  <span style="left:50%; animation-duration:9s; animation-delay:1s;">💖</span>
+  <span style="left:65%; animation-duration:11s; animation-delay:3s;">💗</span>
+  <span style="left:80%; animation-duration:8s; animation-delay:5s;">💕</span>
+  <span style="left:90%; animation-duration:10s; animation-delay:2.5s;">❤️</span>
+</div>
+
+<span class="corner-rose top-left">🌹</span>
+<span class="corner-rose top-right">🌹</span>
+<span class="corner-rose bottom-left">🌹</span>
+<span class="corner-rose bottom-right">🌹</span>
+
+    <head>
+        <link rel="stylesheet" href="Layout.css">
+    </head>
+
+    <header>
+        <title>Happy 4th Anniversary</title>
+    </header>
+
+    <main>
+        <h2>Happy 4th Anniversary</h2>
+        
+    </main>
+
+    <nav class="navbar">
+            <ul>
+                <li><a href="Main.html">Home</a></li>
+                <li><a>Letter</a></li>
+                <li><a href="Snake.html">Snake</a></li>
+            </ul>
+    </nav>
+
+    <div class="content-row">
+
+        <div class="text-content">
+            <h1>Oh Precious, The Bringer of Happiness.</h1>
+            <p>Oh, lady with a bright smile, damsel of the night. You always bring joy to my pitiful heart. My soul has been blessed by your grace for four years and so on.
+
+I can't help but think, how could a lady like you have fallen for a mortal like me? You are an angel, bringing happiness and love wherever you go.
+
+Oh, my dear Bea, I may not be able to grant your wishes and satisfy your love, as I am islands away from you but, i promise that i will come back and give you all of my love. Precious, I will always be proud of you. I love the way you are artistic, creative, kind, caring, and lovely.
+
+When I think of you, I realize that I'm such a lucky bastard to be your boyfriend. Thank you for guiding me and being patient with me. I'm sorry for everything. For the times I was angry, a jerk, an asshole, and for being a terrible person. If it weren't for you, I wouldn't have changed.
+
+You opened my eyes to so many perspectives and opportunities. Thank you for shaping who I am today.
+
+My luv, I know that our distance may seem wide, but just know that I will always be there for you. Don't be afraid to come to me and ask for comfort and help. It's time for me to return the favor for all the years you've been there for me.
+
+My cutie, I believe in you. There might be times when things seem challenging, but through so much adversity that you've faced, you always overcome them, and I love you for that. I can't help but admire how consistent and determined you are. You always say you can't, but in the end, you succeed.
+
+I'm sorry if this letter isn't properly done and if this is all I can give to you, but I hope you'll still feel loved and important, especially on your special days.
+
+Well, my love, thank you for loving me. I will always love you very, very, sooo much, and nothing will change that, not even the end of the universe.
+
+My beautiful love, I hope you'll see how perfect you are, and that even your flaws are perfect.
+
+Luv, I will always wish you the best of luck and wellness.
+
+— Your stupid boyfriend,
+Reine Denzel P. Rivero
+</p>
+        </div>
+    
+    </div>
+
+    <button>
+        Return
+    </button>
+
+    <audio autoplay loop>
+        <source src="50 - The Legend of Zelda Ocarina of Time Complete Soundtrack - 50 Sheiks Theme.mp3";
+    </audio>
+
+    <script>
+    document.querySelector("button").addEventListener("click", function() {
+        window.location.href = "Menu.html";
+    });
+
+    function typeWriter(el, text, speed = 40) {
+    el.textContent = "";
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        el.textContent += text.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+    type();
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const p = document.querySelector('.Main div p');
+  const fullText = p.textContent; // grabs your existing text automatically
+  typeWriter(p, fullText);
+});
+</script>
+
+</html>

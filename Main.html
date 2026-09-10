@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+    <body class="Main">
+
+        <div class="hearts">
+  <span style="left:5%; animation-duration:8s; animation-delay:0s;">💗</span>
+  <span style="left:20%; animation-duration:10s; animation-delay:2s;">💕</span>
+  <span style="left:35%; animation-duration:7s; animation-delay:4s;">❤️</span>
+  <span style="left:50%; animation-duration:9s; animation-delay:1s;">💖</span>
+  <span style="left:65%; animation-duration:11s; animation-delay:3s;">💗</span>
+  <span style="left:80%; animation-duration:8s; animation-delay:5s;">💕</span>
+  <span style="left:90%; animation-duration:10s; animation-delay:2.5s;">❤️</span>
+</div>
+
+<span class="corner-rose top-left">🌹</span>
+<span class="corner-rose top-right">🌹</span>
+<span class="corner-rose bottom-left">🌹</span>
+<span class="corner-rose bottom-right">🌹</span>
+
+    <head>
+        <link rel="stylesheet" href="Layout.css">
+    </head>
+
+    <header>
+        <title>Happy 4th Anniversary</title>
+    </header>
+
+    <main>
+        <h2>Happy 4th Anniversary</h2>
+        
+    </main>
+
+    <nav class="navbar">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a href="Poem.html">Letter</a></li>
+                <li><a href="Snake.html">Snake</a></li>
+            </ul>
+    </nav>
+
+    <div class="content-row">
+        <img src="Pic.jpg" class="side-photo" alt="" width="216" height="162">
+        <img src="Pic1.jpg" class="side-photo1" alt="" width="204" height="272">
+
+        <div class="text-content">
+            <h1>Welcome, My Lovie!</h1>
+            <p>September 10 of 2022 of midnight, The night we became a couple and i cant stop thinking of what just happened. We entered a new beginning of our lives, naive to the perils of love. Went through many challenges and grew stronger together. I cant just believe that we have been together for four years now. My love, I will always love you very soo much. (Hehe moments from our confession).</p>
+        </div>
+        
+        <img src="Pic2.jpg" class="side-photo2" alt="" width="260" height="347">
+        <img src="Pic3.jpg" class="side-photo3" alt="" width="216" height="162">
+        <img src="Pic4.png" class="side-photo4" alt ="" width="449" height="168">
+        <img src="Pic5.png" class="side-photo5" alt ="" width="430" height="201">
+
+    </div>
+
+    <button>
+        Return
+    </button>
+
+    <audio autoplay loop>
+        <source src="Great Fairy Fountain (The Legend of Zelda Breath of the Wild OST).mp3";
+    </audio>
+
+    <script>
+    document.querySelector("button").addEventListener("click", function() {
+        window.location.href = "Menu.html";
+    });
+
+    function typeWriter(el, text, speed = 40, onDone) {
+  el.textContent = "";
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      el.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    } else if (onDone) {
+      onDone();
+    }
+  }
+  type();
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const p = document.querySelector('.Main div p');
+  const fullText = p.textContent;
+
+  typeWriter(p, fullText, 40, () => {
+    document.querySelectorAll(
+      '.side-photo, .side-photo1, .side-photo2, .side-photo3, .side-photo4, .side-photo5' 
+    ).forEach(photo => photo.classList.add('show'));
+  });
+});
+</script>
+
+</html>
